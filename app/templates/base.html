@@ -135,18 +135,6 @@
         </div>
     </div>
 {% endblock %}
-<div class="footer">
-    <p class="footer-content">
-        @2016
-        <a href="#">Blog_mini</a>
-        -开源博客系统
-        {% if not current_user.is_authenticated %}
-            -<a href="{{ url_for('auth.login') }}">
-            <span class="glyphicon glyphicon-wrench">后台管理</span>
-        </a>
-        {% endif %}
-    </p>
-</div>
 <div class="btn-group-vertical floatButton">
     <button id="goTop" class="btn btn-default" title="去顶部" type="button">
         <span class="glyphicon glyphicon-arrow-up"></span>
